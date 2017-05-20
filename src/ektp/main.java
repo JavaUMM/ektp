@@ -11,6 +11,7 @@ package ektp;
  */
 public class main {
     public static void main(String[] args) {
-       
+       pendaftaran daftar = new pendaftaran();
+       daftar.daftar();
     }
 }

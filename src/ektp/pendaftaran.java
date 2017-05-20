@@ -29,7 +29,7 @@ public class pendaftaran {
 		System.out.println("2. List Data eKTP ");
 		System.out.println("3. Sorting Data eKTP ");
 		System.out.println("4. exit ");
-		System.out.println("Pilih :");
+		System.out.print("Pilih :");
 		try{
 			inPilihan = in.nextInt();	
 		}
@@ -40,7 +40,7 @@ public class pendaftaran {
 		switch(inPilihan){
 		case 1:
 			System.out.println("===Iputkan Data eKTP===");
-			System.out.println("Jumlah Inputan Data eKTP :");
+			System.out.print("Jumlah Inputan Data eKTP :");
 			try{
 				inJumlah = in.nextInt();
 			}
@@ -51,67 +51,67 @@ public class pendaftaran {
 			try{
 				for (int i = 0; i < inJumlah;i++){
 					System.out.println("Data ke-"+(i+1));
-					System.out.println("NIK :");
+					System.out.print("NIK :");
 					att.nik = in.next();
 					hash.put(att.nik, att.nik);
 					
-					System.out.println("Nama :");
+					System.out.print("Nama :");
 					att.nama = in.next();				
 					hash.put(att.nama, att.nama);
 					
-					System.out.println("Tempat/Tgl Lahir :");
+					System.out.print("Tempat/Tgl Lahir :");
 					att.ttl = in.next();
 					hash.put(att.ttl, att.ttl);
 					
-					System.out.println("Jenis Kelamin :");
+					System.out.print("Jenis Kelamin :");
 					att.jenisKelamin = in.next();
 					hash.put(att.jenisKelamin, att.jenisKelamin);
 					
-					System.out.println("Alamat :"); 
+					System.out.print("Alamat :"); 
 					att.alamat = in.next();
 					hash.put(att.alamat, att.alamat);
 									
-					System.out.println("Kabupaten :");
+					System.out.print("Kabupaten :");
 					att.kabupaten = in.next();
 					hash.put(att.kabupaten, att.kabupaten);
                                         
-                                        System.out.println("Kecamatan :");
+                                        System.out.print("Kecamatan :");
 					att.kecamatan = in.next();
 					hash.put(att.kecamatan, att.kecamatan);
                                         
-					System.out.println("RT:");
+					System.out.print("RT:");
 					att.rt = in.next();
 					hash.put(att.rt, att.rt);
 					
-					System.out.println("RW:");
+					System.out.print("RW:");
 					att.rw = in.next();
 					hash.put(att.rw, att.rw);
                                         
-                                        System.out.println("Kode Pos:");
+                                        System.out.print("Kode Pos:");
 					att.kodePos = in.next();
 					hash.put(att.kodePos, att.kodePos);
 					
-                                        System.out.println("Agama :");
+                                        System.out.print("Agama :");
 					att.noKk = in.next();
 					hash.put(att.noKk, att.noKk);
                                         
-					System.out.println("Agama :");
+					System.out.print("Agama :");
 					att.agama = in.next();
 					hash.put(att.agama, att.agama);
 					
-					System.out.println("Status Perkawinan :");
+					System.out.print("Status Perkawinan :");
 					att.statusNikah = in.next();
 					hash.put(att.statusNikah, att.statusNikah);
 					
-					System.out.println("Pekerjaan :");
+					System.out.print("Pekerjaan :");
 					att.pekerjaan = in.next();
 					hash.put(att.pekerjaan, att.pekerjaan);
 					
-					System.out.println("Kewarganegaraan :");
+					System.out.print("Kewarganegaraan :");
 					att.jenisWarga = in.next();
 					hash.put(att.jenisWarga, att.jenisWarga);
 					
-					System.out.println("Masa Berlaku :");
+					System.out.print("Masa Berlaku :");
 					att.masaBerlaku = in.next();
 					hash.put(att.masaBerlaku, att.masaBerlaku);
 					
@@ -135,9 +135,74 @@ public class pendaftaran {
 					
 				}
 			}
+			catch(java.util.InputMismatchException a){
+				System.out.println("Maaf inan tidak valid ");
+			}
+			catch(ArrayIndexOutOfBoundsException a){
+				System.out.println("Maaf inan data ektp sudah penuh");
+				System.out.println("Ingin mencoba kembali ? Y/N :");
+				try{
+					pilih = in.next();
+				}
+				catch(Exception e){
+					System.out.println("Maaf data tidak valid");
+				}
+				if(pilih=="n" || pilih=="N"){
+					break;
+				}
+			}
+			break;
+			case 2:
+				System.out.println("\n===List Data eKTP===");
+				
+				if(ktp[0] != null){
+					try{
+						for (int i = 0; i < inJumlah ; i++){
+							System.out.println(ktp[i]);
+						}
+					}
+					catch(ArrayIndexOutOfBoundsException e){
+						System.out.println("Maaf data yang di inattkan salah");
+					}
+					
+				}
+				else{
+					System.out.println("Data kosong\n");
+				}
+				System.out.println("Menu :");
+				System.out.println("1. Back ");
+				System.out.println("2. Exit ");
+				try{
+					inPilihan = in.nextInt();	
+				}
+				catch(java.util.InputMismatchException a){
+					System.out.println("Maaf inan tidak valid " +a);
+					break;   
+				}
+				if(inPilihan==1){
+					run = true;
+
+				}else{
+					System.exit(0);
+					}
+				break;
+			
+			case 3:
+				int i = 1;
+				System.out.println("===Cari Data eKTP===\n");
+				System.out.println("Masukkan Data Yang Ingin Dicari :");
+				baca = in.nextLine();
+					
+			case 4:
+				System.exit(0);
+				break;
+				
+			default:
+				System.out.println("Maaf, menu yang anda pilih tidak ada");
 		
-                }
-	}
+		
+			}
+		}
         
     }
 }
