@@ -11,111 +11,111 @@ import java.util.*;
  * @author Muhammad Fikri
  */
 public class pendaftaran {
-
-    Scanner sc = new Scanner(System.in);
-    
-    String provinsi, kabupaten, kecamatan, kelurahan, rt, namaLengkap, alamat;
-    int noKk;
-    int nik;
-    int kodePos;
-
-    public String getProvinsi() {
-        return provinsi;
-    }
-
-    public void setProvinsi(String provinsi) {
-        this.provinsi = provinsi;
-    }
-
-    public String getKabupaten() {
-        return kabupaten;
-    }
-
-    public void setKabupaten(String kabupaten) {
-        this.kabupaten = kabupaten;
-    }
-
-    public String getKecamatan() {
-        return kecamatan;
-    }
-
-    public void setKecamatan(String kecamatan) {
-        this.kecamatan = kecamatan;
-    }
-    
-    public String getKelurahan() {
-        return kelurahan;
-    }
-
-    public void setKelurahan(String kelurahan) {
-        this.kelurahan = kelurahan;
-    }
-
-    public String getRt() {
-        return rt;
-    }
-
-    public void setRt(String rt) {
-        this.rt = rt;
-    }
-
-    public String getNamaLengkap() {
-        return namaLengkap;
-    }
-
-    public void setNamaLengkap(String namaLengkap) {
-        this.namaLengkap = namaLengkap;
-    }
-
-    public String getAlamat() {
-        return alamat;
-    }
-
-    public void setAlamat(String alamat) {
-        this.alamat = alamat;
-    }
-
-    public int getNoKk() {
-        return noKk;
-    }
-
-    public void setNoKk(int noKk) {
-        this.noKk = noKk;
-    }
-
-    public int getNik() {
-        return nik;
-    }
-
-    public void setNik(int nik) {
-        this.nik = nik;
-    }
-
-    public int getKodePos() {
-        return kodePos;
-    }
-
-    public void setKodePos(int kodePos) {
-        this.kodePos = kodePos;
-    }
+    boolean run;
+    String ktp[] = new String [100];
+    String pilih, baca;
+    int inPilihan, inJumlah;
     
     public void daftar(){
-        System.out.print("Pemerintah Provinsi\t\t : ");
-        provinsi = sc.nextLine();
-        System.out.print("Pemerintah Kabupaten/Kota\t : ");
-        kabupaten = sc.nextLine();
-        System.out.print("Kecamatan\t\t\t : ");
-        kecamatan = sc.nextLine();
-        System.out.print("Kelurahan/Desa\t\t\t : ");
-        kelurahan = sc.nextLine();
-        System.out.println("==============================\n");
-        System.out.print("Nama Lengkap\t\t\t : ");
-        namaLengkap = sc.nextLine();
-        System.out.print("Alamat\t\t\t\t : ");
-        alamat = sc.nextLine();
-        System.out.print("No. KK\t\t\t\t : ");
-        noKk = sc.nextInt();
-    }
-    
-    
+        attribute_ektp att = new attribute_ektp();
+        ArrayList<HashMap<String, String>> arrList = new ArrayList<HashMap<String, String>>();
+        HashMap<String, String> hash = new HashMap<String,String>();
+	Scanner in = new Scanner(System.in);
+        run = true;
+
+        while (run){
+		System.out.println("\nMenu :");
+		System.out.println("1. Iputan Data eKTP ");
+		System.out.println("2. List Data eKTP ");
+		System.out.println("3. Sorting Data eKTP ");
+		System.out.println("4. exit ");
+		System.out.println("Pilih :");
+		try{
+			inPilihan = in.nextInt();	
+		}
+		catch(java.util.InputMismatchException a){
+			System.out.println("Maaf inan tidak valid " +a);
+			break;
+		}
+		switch(inPilihan){
+		case 1:
+			System.out.println("===Iputkan Data eKTP===");
+			System.out.println("Jumlah Inputan Data eKTP :");
+			try{
+				inJumlah = in.nextInt();
+			}
+			catch(java.util.InputMismatchException e){
+				System.out.println("Maaf inan tidak valid " +e);
+				break;
+			}	
+			try{
+				for (int i = 0; i < inJumlah;i++){
+					System.out.println("Data ke-"+(i+1));
+					System.out.println("NIK :");
+					att.nik = in.next();
+					hash.put(att.nik, att.nik);
+					
+					System.out.println("Nama :");
+					att.nama = in.next();				
+					hash.put(att.nama, att.nama);
+					
+					System.out.println("Tempat/Tgl Lahir :");
+					att.ttl = in.next();
+					hash.put(att.ttl, att.ttl);
+					
+					System.out.println("Jenis Kelamin :");
+					att.jenisKelamin = in.next();
+					hash.put(att.jenisKelamin, att.jenisKelamin);
+					
+					System.out.println("Alamat :"); 
+					att.alamat = in.next();
+					hash.put(att.alamat, att.alamat);
+									
+					System.out.println("Kabupaten :");
+					att.kabupaten = in.next();
+					hash.put(att.kabupaten, att.kabupaten);
+                                        
+                                        System.out.println("Kecamatan :");
+					att.kecamatan = in.next();
+					hash.put(att.kecamatan, att.kecamatan);
+                                        
+					System.out.println("RT:");
+					att.rt = in.next();
+					hash.put(att.rt, att.rt);
+					
+					System.out.println("RW:");
+					att.rw = in.next();
+					hash.put(att.rw, att.rw);
+                                        
+                                        System.out.println("Kode Pos:");
+					att.kodePos = in.next();
+					hash.put(att.kodePos, att.kodePos);
+					
+                                        System.out.println("Agama :");
+					att.noKk = in.next();
+					hash.put(att.noKk, att.noKk);
+                                        
+					System.out.println("Agama :");
+					att.agama = in.next();
+					hash.put(att.agama, att.agama);
+					
+					System.out.println("Status Perkawinan :");
+					att.statusNikah = in.next();
+					hash.put(att.statusNikah, att.statusNikah);
+					
+					System.out.println("Pekerjaan :");
+					att.pekerjaan = in.next();
+					hash.put(att.pekerjaan, att.pekerjaan);
+					
+					System.out.println("Kewarganegaraan :");
+					att.jenisWarga = in.next();
+					hash.put(att.jenisWarga, att.jenisWarga);
+					
+					System.out.println("Masa Berlaku :");
+					att.masaBerlaku = in.next();
+					hash.put(att.masaBerlaku, att.masaBerlaku);
+					
+					arrList.add(hash);
+					
+					
 }
