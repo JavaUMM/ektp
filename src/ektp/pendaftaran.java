@@ -117,5 +117,27 @@ public class pendaftaran {
 					
 					arrList.add(hash);
 					
+					ktp[i] = (i+1) + 
+							"\n NIK                 =" +arrList.get(i).get(att.nik) +
+							"\n Nama                =" +arrList.get(i).get(att.nama)  +
+							"\n Tempat/Tgl Lahir    =" +arrList.get(i).get(att.ttl)+
+							"\n Alamat              =" +arrList.get(i).get(att.alamat)+
+							"\n RT/RW               =" +arrList.get(i).get(att.rt)+" - "+arrList.get(i).get(att.rw)+
+							"\n Desa                =" +arrList.get(i).get(att.kabupaten)+
+							"\n Kecamatan		=" +arrList.get(i).get(att.kecamatan)+
+                                                        "\n Kecamatan		=" +arrList.get(i).get(att.kodePos)+
+                                                        "\n Kecamatan		=" +arrList.get(i).get(att.noKk)+
+							"\n Agama       	 =" +arrList.get(i).get(att.agama)+
+							"\n Status Perkawinan	 =" +arrList.get(i).get(att.statusNikah)+
+							"\n Pekerjaan		 =" +arrList.get(i).get(att.pekerjaan)+
+							"\n Kewarganegaraan	 =" +arrList.get(i).get(att.jenisWarga)+
+							"\n Masa Berlaku		 =" +arrList.get(i).get(att.masaBerlaku)+ "\n";
 					
+				}
+			}
+		
+                }
+	}
+        
+    }
 }
