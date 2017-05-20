@@ -26,32 +26,132 @@ public class wargaGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField1 = new javax.swing.JTextField();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        inNik = new javax.swing.JLabel();
+        inNama = new javax.swing.JLabel();
+        inTtl = new javax.swing.JLabel();
+        inAlamat = new javax.swing.JLabel();
+        inRt = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        inRw = new javax.swing.JLabel();
+        inKabupaten = new javax.swing.JLabel();
+        inKecamatan = new javax.swing.JLabel();
+        inNokk = new javax.swing.JLabel();
+        inAgama = new javax.swing.JLabel();
+        inStatuspernikahan = new javax.swing.JLabel();
+        inPekerjaan = new javax.swing.JLabel();
+        inKewarganegaraan = new javax.swing.JLabel();
+        inMasaberlaku = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        inKodepos = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTextField1.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
-        jTextField1.setText("Data Warga");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
+        jLabel1.setFont(new java.awt.Font("sansserif", 0, 30)); // NOI18N
+        jLabel1.setText("Data Warga");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
-            },
-            new String [] {
-                "Nama", "Agama", "Jenis Kelamin", "Provinsi", "Status Pernikahan"
-            }
-        ));
-        jScrollPane1.setViewportView(jTable1);
+        jLabel2.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel2.setText("NIK                                         :");
+
+        jLabel3.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel3.setText("Nama                                     :");
+
+        jLabel4.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel4.setText("Tempat Tanggal Lahir           :");
+
+        jLabel5.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel5.setText("Alamat                                   :");
+
+        jLabel6.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel6.setText("RT / RW                                :");
+
+        jLabel7.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel7.setText("Kabupaten                             :");
+
+        jLabel8.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel8.setText("Kecamatan                           :");
+
+        jLabel9.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel9.setText("No. KK                                  :");
+
+        jLabel10.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel10.setText("Agama                                  :");
+
+        jLabel11.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel11.setText("Status Pernikahan                :");
+
+        jLabel12.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel12.setText("Pekerjaan                             :");
+
+        jLabel13.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel13.setText("Kewarganegaraan               :");
+
+        jLabel14.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel14.setText("Masa Berlaku                      :");
+
+        inNik.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        inNik.setText("jLabel15");
+
+        inNama.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        inNama.setText("jLabel16");
+
+        inTtl.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        inTtl.setText("jLabel17");
+
+        inAlamat.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        inAlamat.setText("jLabel18");
+
+        inRt.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        inRt.setText("jLabel19");
+
+        jLabel20.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel20.setText("/");
+
+        inRw.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        inRw.setText("jLabel21");
+
+        inKabupaten.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        inKabupaten.setText("jLabel22");
+
+        inKecamatan.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        inKecamatan.setText("jLabel23");
+
+        inNokk.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        inNokk.setText("jLabel24");
+
+        inAgama.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        inAgama.setText("jLabel25");
+
+        inStatuspernikahan.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        inStatuspernikahan.setText("jLabel26");
+
+        inPekerjaan.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        inPekerjaan.setText("jLabel27");
+
+        inKewarganegaraan.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        inKewarganegaraan.setText("jLabel28");
+
+        inMasaberlaku.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        inMasaberlaku.setText("jLabel29");
+
+        jLabel15.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        jLabel15.setText("Kode Pos                              : ");
+
+        inKodepos.setFont(new java.awt.Font("sansserif", 0, 15)); // NOI18N
+        inKodepos.setText("jLabel16");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -59,29 +159,143 @@ public class wargaGUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 543, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(jLabel1)
+                .addGap(185, 185, 185))
             .addGroup(layout.createSequentialGroup()
-                .addGap(234, 234, 234)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel3)
+                            .addGap(18, 18, 18)
+                            .addComponent(inNama, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel2)
+                            .addGap(18, 18, 18)
+                            .addComponent(inNik, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel4)
+                            .addGap(18, 18, 18)
+                            .addComponent(inTtl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel5)
+                            .addGap(18, 18, 18)
+                            .addComponent(inAlamat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel6)
+                            .addGap(18, 18, 18)
+                            .addComponent(inRt)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 9, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(inRw))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel7)
+                            .addGap(18, 18, 18)
+                            .addComponent(inKabupaten, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel8)
+                            .addGap(18, 18, 18)
+                            .addComponent(inKecamatan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel9)
+                            .addGap(18, 18, 18)
+                            .addComponent(inNokk, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel10)
+                            .addGap(18, 18, 18)
+                            .addComponent(inAgama, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel11)
+                            .addGap(18, 18, 18)
+                            .addComponent(inStatuspernikahan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel12)
+                            .addGap(18, 18, 18)
+                            .addComponent(inPekerjaan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel13)
+                            .addGap(18, 18, 18)
+                            .addComponent(inKewarganegaraan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel14)
+                            .addGap(18, 18, 18)
+                            .addComponent(inMasaberlaku, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel15)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(inKodepos)))
+                .addContainerGap(88, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 358, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(29, 29, 29)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(inNik))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel3)
+                            .addComponent(inNama))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel4)
+                            .addComponent(inTtl))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel5)
+                            .addComponent(inAlamat))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel6)
+                            .addComponent(inRt)
+                            .addComponent(jLabel20)
+                            .addComponent(inRw))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel7)
+                            .addComponent(inKabupaten))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel8))
+                    .addComponent(inKecamatan))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15)
+                    .addComponent(inKodepos))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(inNokk))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(inAgama))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(inStatuspernikahan))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(inPekerjaan))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(inKewarganegaraan))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(inMasaberlaku))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -119,9 +333,37 @@ public class wargaGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel inAgama;
+    private javax.swing.JLabel inAlamat;
+    private javax.swing.JLabel inKabupaten;
+    private javax.swing.JLabel inKecamatan;
+    private javax.swing.JLabel inKewarganegaraan;
+    private javax.swing.JLabel inKodepos;
+    private javax.swing.JLabel inMasaberlaku;
+    private javax.swing.JLabel inNama;
+    private javax.swing.JLabel inNik;
+    private javax.swing.JLabel inNokk;
+    private javax.swing.JLabel inPekerjaan;
+    private javax.swing.JLabel inRt;
+    private javax.swing.JLabel inRw;
+    private javax.swing.JLabel inStatuspernikahan;
+    private javax.swing.JLabel inTtl;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
 
 }
